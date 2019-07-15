@@ -1,12 +1,166 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+  <!-- Логотип и меню -->
+  <header class="page-header">
+    <a href="#" class="page-header__logo">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Приложение PINK" width="75"
+        height="22">PINK
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        Открыть меню
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--hover site-list__item--down">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#"> HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <!-- Слоган и основная картинка -->
+    <h1 class="visually-hidden">
+      Приложение Пинк - раскрась свои серые будни
+    </h1>
+    <section class="main-picture">
+      <h2 class="main-picture__slogan">Взгляни на жизнь иначе!</h2>
+      <img src="http://placehold.it/150x100" alt="Изображение телефона в руке" width="320" height="462">
+    </section>
+    <section class="app-download">
+      <h2 class="visually-hidden">
+        Загрузка приложения Пинк
+      </h2>
+      <!-- Кнопка-ссылка для загрузки приложения -->
+      <a href="#" class="app-download__button">
+        Скачать приложение
+      </a>
+      <ul class="icons-apps">
+        <li class="icons-apps__item--apple"></li>
+        <li class="icons-apps__item--android"></li>
+        <li class="icons-apps__item--microsoft"></li>
+      </ul>
+      <h3 class="icons-apps__title">
+        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </h3>
+    </section>
+    <!-- Описание возможностей приложения -->
+    <section class="advantages">
+      <h2 class="visually-hidden">
+        Возможности приложения
+      </h2>
+      <h2 class="advantages__question question">
+        Устали от серости мегаполиса? Нам есть что вам предложить!
+      </h2>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <h3 class="advantages__title">
+            Поднимает настроение
+          </h3>
+          <p class="advantages__description">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          </p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">
+            Меняет мир вокруг
+          </h3>
+          <p class="advantages__description">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          </p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">
+            Заводит новых друзей
+          </h3>
+          <p class="advantages__description">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </li>
+        <li class="advantages__item">
+          <img class="advantages__image" src="http://placehold.it/150x100" alt="Приложение PINK" width="157" height="320">
+        </li>
+      </ul>
+    </section>
+    <!-- Отзывы о приложении -->
+    <section class="reviews">
+      <h2 class="visually-hidden">
+        Отзывы о приложении
+      </h2>
+      <div class="reviews__list slider__list">
+        <blockquote class="reviews__item slider__item">
+          <cite class="reviews__autor-name">
+            Николай Петров
+          </cite>
+          <p class="reviews__text">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+            познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
+        </blockquote>
+        <blockquote class="reviews__item slider__item">
+          <cite class="reviews__autor-name">
+            Василий Сергеев
+          </cite>
+          <p class="reviews__text">
+            «Супер приложение. Побольше бы таких для улучшения настроения»
+          </p>
+        </blockquote>
+        <blockquote class="reviews__item slider__item">
+          <cite class="reviews__autor-name">
+            Мария Садчикова
+          </cite>
+          <p class="reviews__text">
+            «Зависла в нем на целый день. Этот день можно смело выкинуть из жизни. Спасибо разработчикам»
+          </p>
+        </blockquote>
+      </div>
+      <p class="reviews__toggles slider__toggles">
+        <button class="slider__toggle" type="button"></button>
+        <button class="slider__toggle" type="button"></button>
+        <button class="slider__toggle" type="button"></button>
+      </p>
+    </section>
+    <!-- Тарифные планы -->
+    <section class="plans">
+        <h2 class="visually-hidden">Тарифные планы</h2>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__contacts contacts">
+      <h2 class="contacts__question question">
+        Остались вопросы? Свяжитесь с нами!
+      </h2>
+      <b class="contacts__title">
+        Звоните:
+      </b>
+      <a class="contacts__phone" href="tel:+78125556666">
+        <span class="contacts__phone-mobile">+7(812)555-66-66</span>
+      </a>
+      <b class="contacts__title">
+        Пишите:
+      </b>
+      <a class="contacts__email" href="mail@htmlacademy.ru">
+        <span class="contacts__email-mobile">mail@htmlacademy.ru</span>
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
