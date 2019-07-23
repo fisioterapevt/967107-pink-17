@@ -1,0 +1,105 @@
+.main-picture {
+  position: relative;
+  width: 320px;
+  height: 462px;
+  margin: 0 auto;
+  font-size: 0;
+  text-align: center;
+}
+
+.main-picture__back {
+  width: 320px;
+  height: 462px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.main-picture__iphone-hand {
+  position: absolute;
+  top: 176px;
+  left: 0;
+  width: 320px;
+  height: 462px;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+}
+
+.main-picture__slogan {
+  display: none;
+}
+
+// Tablet version
+
+@media (min-width: @tablet-width) {
+  .main-picture {
+    width: 660px;
+    height: 730px;
+  }
+
+  .main-picture__back {
+    width: 660px;
+    height: 729px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .main-picture__iphone-hand {
+    top: 383px;
+    left: 150px;
+    width: 440px;
+    height: 345px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .main-picture__slogan {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    top: 165px;
+    left: 110px;
+    width: 190px;
+    height: 130px;
+    color: @white;
+    font-family: @font;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
+
+//Desktop version
+@media (min-width: @desktop-width) {
+  .main-picture {
+    width: 1200px;
+    height: 853px;
+  }
+
+  .main-picture__back {
+    width: 1200px;
+    height: 853px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .main-picture__iphone-hand {
+    top: 192px;
+    left: 400px;
+    width: 750px;
+    height: 660px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+  }
+
+  .main-picture__slogan {
+    top: 210px;
+    left: 160px;
+    font-family: @font;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 65px;
+    color: @white;
+    width: 240px;
+    height: 165px;
+  }
+}

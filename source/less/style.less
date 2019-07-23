@@ -1,0 +1,67 @@
+@import "variables.less";
+@import "page-header.less";
+@import "page-main-picture.less";
+@import "page-main.less";
+@import "page-app-download.less";
+@import "page-advantages.less";
+@import "page-reviews.less";
+@import "page-footer.less";
+@import "photo-main.less";
+@import "photo-main-picture.less";
+@import "photo-user-photos.less";
+@import "photo-footer.less";
+@import "form-main.less";
+@import "form-main-pictures.less";
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  background-color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    width: 1200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: 1400px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.ul-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link-style {
+  text-decoration: none;
+  color: @white;
+}
+
+.link-style-red {
+  text-decoration: none;
+  color: #d22856;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
