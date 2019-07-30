@@ -1,7 +1,23 @@
-
-.main__heading--form-style {
+.main__heading-form {
   width: 230px;
 
-  top: 84px;
-  left: 50px;
+  top: 65px;
+  margin-left: -115px;
+}
+
+@media (min-width: @tablet-width) {
+  .main__heading-form {
+    width: 474px;
+    top: 125px;
+    margin-left: -237px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main__heading-form {
+    width: 750px;
+    top: 190px;
+    left: 50%;
+    margin-left: -375px;
+  }
 }

@@ -1,38 +1,35 @@
-
 .main__heading {
   position: absolute;
-
-  width: 168px;
-  font-family: @font;
-  line-height: 30px;
-
-  color: @white;
-
   font-weight: 300;
-  font-size: 24px;
+  color: @white;
+  text-align: center;
+}
 
-  top: 84px;
-  left: 90px;
+.main__heading-photo {
+  width: 168px;
+  line-height: 30px;
+  font-size: 24px;
+  top: 75px;
+  left: 50%;
+  margin-left: -84px;
 }
 
 @media (min-width: @tablet-width) {
-  .main__heading {
+  .main__heading-photo {
     width: 348px;
     font-size: 50px;
     line-height: 60px;
+
     top: 125px;
-    left: 150px;
+    margin-left: -174px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .photo-main__picture {
-    width: 1200px;
-    height: 853px;
-  }
-
-  .main__heading {
+  .main__heading-photo {
+    width: 350px;
     top: 190px;
-    left: 450px;
+    left: 50%;
+    margin-left: -175px;
   }
 }

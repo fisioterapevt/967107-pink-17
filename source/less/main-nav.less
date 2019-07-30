@@ -1,0 +1,192 @@
+.main-nav {
+  position: relative;
+
+  width: auto;
+  z-index: 2;
+}
+
+.main-nav__toggle {
+  position: absolute;
+
+  top: 25px;
+  right: 20px;
+  z-index: 2;
+
+  width: 55px;
+  height: 30px;
+
+  background-color: unset;
+
+  cursor: pointer;
+  border: 0;
+}
+
+//toogle Hamburger menu -closed- condition
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+
+  width: 50px;
+  height: 4px;
+
+  background-color: @white;
+  box-shadow: 0 8px 0 0 @white, 0 16px 0 0 @white;
+}
+
+// hover condition Hamburger (another color)
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: @red;
+  box-shadow: 0 8px 0 0 @red, 0 16px 0 0 @red;
+}
+
+//focus condition Hamburger (another color)
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: @red-active;
+  box-shadow: 0 8px 0 0 @red-active, 0 16px 0 0 @red-active;
+}
+
+//toogle Cross menu -opened- condition
+.main-nav--opened .main-nav__toggle {
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 15px;
+
+    width: 30px;
+    height: 5px;
+
+    background-color: @white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  // hover condition Cross (another color)
+  &:hover::before,
+  &:hover::after {
+    background-color: @red;
+  }
+
+  // active condition Cross (another color)
+  &:active::before,
+  &:active::after {
+    background-color: rgb(116, 26, 26);
+  }
+}
+
+.main-nav__list {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.link-style-nav {
+  display: block;
+  text-align: center;
+  padding: 25px 25px;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #485461;
+}
+
+.link-style[href] {
+  &:hover {
+    color: rgb(210, 40, 86);
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+// скрывает меню только в указанных рамках
+@media (max-width: @mobile-to-tablet-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--closed .link-style {
+    border: 0;
+  }
+
+  .main-nav--opened .site-list__item,
+  .main-nav--opened .site-list__item--logo {
+    background-color: @dark-blue;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+
+  .main-nav__logo-mobile {
+    display: none;
+  }
+
+  .site-list__item--logo {
+    background-image: url(../img/logo-pink-white-desktop.svg);
+    background-repeat: no-repeat;
+    }
+  }
+
+@media (min-width: @desktop-width) {
+  // .site-list__item--logo {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 10%;
+  //   margin-top: -25px;
+  //   width: 150px;
+  //   height: 50px;
+  // }
+
+  .main-nav {
+    background-color: #28364580;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: unset;
+  }
+
+  .link-style-nav {
+    display: block;
+
+    padding-top: 47px;
+    padding-bottom: 44px;
+    padding-right: 83px;
+    padding-left: 0;
+
+    border-bottom: 0;
+    border-top: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

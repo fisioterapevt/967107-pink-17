@@ -12,41 +12,45 @@
 
 <body>
   <!-- Логотип и меню -->
-  <header class="page-header">
-    <div class="page-header__logo"">
-        <a href=" yandex.ru" class="page-header__logo"></a>
-    </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        Открыть меню
-      </button>
-      <div class="main-nav__wrapper">
+  <header class="main-header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list site-list ul-style">
-          <li class="site-list__item site-list__item--hover site-list__item--down">
-            <a class="link-style" href="#">Главная</a>
+          <li class="site-list__item--logo">
+            <a href="index.html" class="link-style">
+              <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink" width="75" height="22">
+            </a>
           </li>
           <li class="site-list__item">
-            <a class="link-style" href="#">Фотографии</a>
+            <a class="link-style" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="link-style" href="#">Конкурс</a>
+            <a class="link-style" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a class="link-style" href="#"> HTML Academy</a>
+            <a class="link-style">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="link-style" href="#">HTML Academy</a>
           </li>
         </ul>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
   <!-- Основная часть -->
   <main class="form-main">
     <h1 class="visually-hidden">Форма участия в конкурсе</h1>
+
+
     <section class="main-picture">
       <div class="main-picture__back">Фотография</div>
-      <h2 class="main__heading main__heading--form-style">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      <h2 class="main__heading  main__heading-form">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </section>
+
+
     <div class="description">
-      <p class="description-text">
+      <p class="description__text">
         Поделитесь своей историей и получите шанс выиграть ценный приз
         — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
       </p>
@@ -70,7 +74,7 @@
       </li>
       <div class="footer__icon footer__icon--logo-htmlacademy">
         Разработано
-        <img src="img/logo-htmlacademy.svg" alt="">
+        <img src="img/logo-htmlacademy.svg" alt="Логотип HTMLacademy">
       </div>
     </ul>
   </section>
