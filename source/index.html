@@ -18,24 +18,28 @@
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item--logo">
-          <a href="index.html" class="link-style link-style-nav">
-            <img class="main-nav__logo-mobile" src="img/logo-pink-white-mobile.svg" alt="Логотип Pink" width="75"
-              height="22">
+      <ul class="main-nav__list">
+        <li class="main-nav__logo">
+          <a href="index.html" class="main-nav__logo-image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Pink" width="75"
+                height="22">
+            </picture>
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="link-style link-style-nav">Главная</a>
+        <li class="main-nav__list-item link-style-nav">
+          <a class="link-style">Главная</a>
         </li>
-        <li class="site-list__item">
-          <a class="link-style link-style-nav" href="photo.html">Фотографии</a>
+        <li class="main-nav__list-item link-style-nav">
+          <a class="link-style" href="photo.html">Фотографии</a>
         </li>
-        <li class="site-list__item">
-          <a class="link-style link-style-nav" href="form.html">Конкурс</a>
+        <li class="main-nav__list-item  link-style-nav">
+          <a class="link-style" href="form.html">Конкурс</a>
         </li>
-        <li class="site-list__item">
-          <a class="link-style link-style-nav" href="#">HTML Academy</a>
+        <li class="main-nav__list-item link-style-nav">
+          <a class="link-style" href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -73,155 +77,172 @@
         </h3>
         </se>
       </section>
-      </section>
-      <!-- Описание возможностей приложения -->
-      <section class="advantages">
-        <h2 class="visually-hidden">
-          Возможности приложения
-        </h2>
-        <div class="advantages__head-style">
-          <p>
-            Устали от серости мегаполиса?
-          </p>
-          <p>
-            Нам есть, что вам <br> предложить!
-          </p>
-        </div>
-          <div class="advantages__list-wrap">
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <div class="advantages__item--iphone-screen-1"></div>
-              <h3 class="advantages__title">
-                Поднимает настроение
-              </h3>
-              <p>
-                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-              </p>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__item--iphone-screen-2"></div>
-              <h3 class="advantages__title">
-                Меняет мир вокруг
-              </h3>
-              <p>
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-              </p>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__item--iphone-screen-3"></div>
-              <h3 class="advantages__title">
-                Заводит новых друзей
-              </h3>
-              <p>
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-              </p>
-            </li>
-          </ul>
-          <div class="advantages__image-iphone"></div>
-        </div>
-          <ul class="advantages__effect">
-            <li class="advantages__effect-picture"></li>
-            <li class="advantages__effect-text">
-              <h3>Эффект на 24 часа!</h3>
-              <p>
-                Британские ученые провели исследования и доказали,
-                что положительный эффект от использования приложения длится целые сутки!
-              </p>
-              <a href="#">Узнать больше об исследовании</a>
-            </li>
-          </ul>
-      </section>
-      <!-- Отзывы о приложении -->
-      <section class="reviews-slider">
-        <h2 class="visually-hidden">
-          Отзывы о приложении
-        </h2>
-        <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
-            <cite class="reviews__autor-name">
-              Николай Петров
-              <p class="reviews__age-proff">25 лет, водитель трамвая</p>
-            </cite>
-            <p class="reviews__text">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-              познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
-          </blockquote>
-          <blockquote class="reviews__item slider__item-2">
-            <cite class="reviews__autor-name">
-              Василий Сергеев
-            </cite>
-            <p class="reviews__text">
-              «Супер приложение. Побольше бы таких для улучшения настроения»
-            </p>
-          </blockquote>
-          <blockquote class="reviews__item slider__item-3">
-            <cite class="reviews__autor-name">
-              Мария Садчикова
-            </cite>
-            <p class="reviews__text">
-              «Зависла в нем на целый день. Этот день можно смело выкинуть из жизни. Спасибо разработчикам»
-            </p>
-          </blockquote>
-        </div>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
+    </section>
+    <!-- Описание возможностей приложения -->
+    <section class="advantages">
+      <h2 class="visually-hidden">
+        Возможности приложения
+      </h2>
+      <div class="advantages__head-style">
+        <p>
+          Устали от серости мегаполиса?
         </p>
-      </section>
-      <!-- Тарифные планы -->
-      <section class="plans">
-        <h2 class="visually-hidden">Тарифные планы</h2>
-      </section>
+        <p>
+          Нам есть, что вам <br> предложить!
+        </p>
+      </div>
+      <div class="advantages__list-wrap">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <img src="img/iphone-screen-1-desktop@1x.png" alt="Фотография iPhone" width="290" height="350">
+            <h3>
+              Поднимает настроение
+            </h3>
+            <p>
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="advantages__item">
+            <img src="img/iphone-screen-2-desktop@1x.png" alt="Фотография iPhone" width="290" height="350">
+            <h3>
+              Меняет мир вокруг
+            </h3>
+            <p>
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="advantages__item">
+            <img src="img/iphone-screen-3-desktop@1x.png" alt="Фотография iPhone" width="290" height="350">
+            <h3>
+              Заводит новых друзей
+            </h3>
+            <p>
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+        <img class="advantages__image-iphone" src="img/iphone-screen-3-tablet@1x.png" alt="Фотография iPhone"
+          width="185" height="320">
+      </div>
+      <ul class="advantages__effect">
+        <li class="advantages__effect-picture"></li>
+        <li class="advantages__effect-text">
+          <h3>Эффект на 24 часа!</h3>
+          <p>
+            Британские ученые провели исследования и доказали,
+            что положительный эффект от использования приложения длится целые сутки!
+          </p>
+          <a href="#">Узнать больше об исследовании</a>
+        </li>
+      </ul>
+    </section>
+    <!-- Отзывы о приложении -->
+    <section class="reviews-slider">
+      <h2 class="visually-hidden">
+        Отзывы о приложении
+      </h2>
+      <div class="reviews-slider__quotes"></div>
+      <blockquote class="reviews__item slider-1">
+        <cite class="reviews__autor-name">
+          Николай Петров
+          <p class="reviews__age-proff">25 лет, водитель трамвая</p>
+        </cite>
+        <p class="reviews__text">
+          «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+          познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+        </p>
+      </blockquote>
+      <blockquote class="reviews__item slider-2">
+        <cite class="reviews__autor-name">
+          Василий Сергеев
+        </cite>
+        <p class="reviews__text">
+          «Супер приложение. Побольше бы таких для улучшения настроения»
+        </p>
+      </blockquote>
+      <blockquote class="reviews__item slider-3">
+        <cite class="reviews__autor-name">
+          Мария Садчикова
+        </cite>
+        <p class="reviews__text">
+          «Зависла в нем на целый день. Этот день можно смело выкинуть из жизни. Спасибо разработчикам»
+        </p>
+      </blockquote>
+      <p class="reviews__toggles slider__toggles">
+        <button class="slider__toggle" type="button"></button>
+        <button class="slider__toggle" type="button"></button>
+        <button class="slider__toggle" type="button"></button>
+      </p>
+      <button class="reviews-slider__control-left" type="button" aria-label="Стрелка влево"></button>
+      <button class="reviews-slider__control-right" type="button" aria-label="Стрелка вправо"></button>
+    </section>
+    <!-- Тарифные планы -->
+    <section class="plans">
+      <h2 class="visually-hidden">Тарифные планы</h2>
+    </section>
   </main>
   <footer class="footer">
-    <div class="footer__contacts contacts">
-      <h2 class="contacts__question question">
-        Остались вопросы? Свяжитесь с нами!
-      </h2>
-      <b class="contacts__title">
-        Звоните:
-      </b>
-      <a class="contacts__link" href="tel:+78125556666">
-        <span class="contacts__phone">+7(812)555-66-66</span>
-      </a>
-      <b class="contacts__title">
-        Пишите:
-      </b>
-      <a class="contacts__link" href="mail@htmlacademy.ru">
-        <span class="contacts__email">mail@htmlacademy.ru</span>
-      </a>
-      <b class="contacts__title">
-        Приезжайте в гости
-      </b>
-      <a class="contacts__link" href="#">
-        <span class="contacts__address">ул. Большая Конюшенная, 19/8</span>
-      </a>
-    </div>
-    <div class="contacts__map">
-      <img src="img/bg-map-mobile@1x.png" width="320" height="158" alt="карта проезда до офиса" tabindex="0">
-    </div>
+    <h2 class="contacts__question">
+      Остались вопросы? Свяжитесь с нами!
+    </h2>
+    <ul class="footer__contacts">
+      <li class="footer__contacts-item">
+        <b>
+          Звоните:
+        </b>
+        <a href="tel:+78125556666">
+          <span>+7 (812) 555-66-66</span>
+        </a>
+      </li>
+      <li class="footer__contacts-item">
+        <b>
+          Пишите:
+        </b>
+        <a href="mail@htmlacademy.ru">
+          <span>mail@htmlacademy.ru</span>
+        </a>
+      </li>
+      <li class="footer__contacts-item">
+        <b>
+          Приезжайте в гости
+        </b>
+        <a href="#">
+          <span>ул. Большая Конюшенная, 19/8</span>
+        </a>
+      </li>
+    </ul>
+    <section class="contacts__map">
+      <!-- doesn't work -->
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
+        <img src="img/bg-map-mobile@1x.png" width="320" height="158" alt="карта проезда до офиса" tabindex="0">
+      </picture>
+    </section>
     <h2 class="visually-hidden">Социальные сети</h2>
     <section class="footer__icons">
-      <div class="footer__icon footer__icon--logo-pink">
-        <img src="img/logo-pink-blue-mobile.svg" alt="" width="150" height="45">
+      <div class="footer__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img src="img/logo-pink-blue-mobile.svg" alt="" width="150" height="45">
+        </picture>
       </div>
       <ul class="footer__social">
-        <li class="footer__icon footer__icon--twitter">
+        <li class="footer__icon">
           <img src="img/icon-twitter.svg" alt="">
         </li>
-        <li class="footer__icon footer__icon--facebook">
+        <li class="footer__icon">
           <img src="img/icon-facebook.svg" alt="">
         </li>
-        <li class="footer__icon footer__icon--youtube">
+        <li class="footer__icon">
           <img src="img/icon-youtube.svg" alt="">
         </li>
-        <div class="footer__icon footer__icon--logo-htmlacademy">
-          Разработано
-          <img src="img/logo-htmlacademy.svg" alt="Логотип HTMLacademy">
-        </div>
       </ul>
+      <div class="footer__icon-htmlacademy">
+        Разработано
+        <img src="img/logo-htmlacademy.svg" alt="Логотип HTMLacademy">
+      </div>
+
     </section>
   </footer>
   <script src="js/script.js"></script>

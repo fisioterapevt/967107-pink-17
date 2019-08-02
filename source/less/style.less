@@ -1,17 +1,14 @@
 @import "variables.less";
-@import "main-header.less";
 @import "main-nav.less";
+@import "footer.less";
+@import "mobile-footer.less";
 @import "index-main-picture.less";
 @import "index-app-download.less";
-// @import "footer.less";
 @import "index-advantages.less";
-// @import "index-reviews.less";
-// @import "photo-main.less";
-// @import "photo-main-picture.less";
-// @import "photo-user-photos.less";
-// @import "photo-footer.less";
-// @import "form-main.less";
-// @import "form-main-pictures.less";
+@import "index-reviews.less";
+@import "photo-main-picture.less";
+@import "photo-user-photos.less";
+@import "form-main-pictures.less";
 
 html {
   box-sizing: border-box;
@@ -28,11 +25,9 @@ body {
   font-weight: 400;
   font-style: normal;
   color: @dark-blue;
-
-  background-color: rgb(143, 221, 245);
-
-  // background-color: @white;
+  background-color: @white;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -67,11 +62,8 @@ img {
   overflow: hidden;
 }
 
-
 .link-style {
   color: @white;
   text-decoration: none;
   cursor: pointer;
 }
-
-

@@ -13,124 +13,124 @@
 <body>
   <!-- Логотип и меню -->
   <header class="main-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list ul-style">
-          <li class="site-list__item--logo">
-            <a href="index.html" class="link-style">
-              <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink" width="75" height="22">
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="link-style" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="link-style">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="link-style" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="link-style" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__logo">
+          <a href="index.html" class="main-nav__logo-image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Pink" width="75"
+                height="22">
+            </picture>
+          </a>
+        </li>
+        <li class="main-nav__list-item link-style-nav">
+          <a class="link-style" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__list-item link-style-nav">
+          <a class="link-style">Фотографии</a>
+        </li>
+        <li class="main-nav__list-item  link-style-nav">
+          <a class="link-style" href="form.html">Конкурс</a>
+        </li>
+        <li class="main-nav__list-item link-style-nav">
+          <a class="link-style" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <!-- Основная часть -->
   <main class="photo-main">
-
-
     <section class="main-picture">
       <div class="main-picture__back">Фотография</div>
-      <h1 class="main__heading main__heading-photo">Фотографии пользователей</h1>
+      <h1 class="main__heading">Фотографии пользователей</h1>
     </section>
-
-
-    <div class="description">
-      <p class="description__text">
+    <section class="user-photos">
+      <p class="description">
         Взгляните на фотографии, которые выкладывают пользователи!
         Видите, как не хватает ваших?
       </p>
-    </div>
-    <section class="user-photos">
       <h2 class="visually-hidden">Фото пользователей</h2>
-      <div class="user-photos__panorama">
-        <span class="user-photos__flag">Панорама дня</span>
-        <div class="user-photos__image--panorama"></div>
-        <div class="user-photo__comment comment">
-          <cite class="comment__author-name">Анна</cite>
-          <span class="comment__timer">(5 минут назад)</span>
-          <p class="comment__text">
-            Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
-            вопросы!
-          </p>
-          <div class="comment__like">Нравится: 215</div>
-        </div>
-      </div>
-      <ul class="user-photos__list ul-style">
+      <ul class="user-photos__list">
+        <li class="user-photos__panorama">
+          <div class="user-photos__panorama-image">
+            <span class="user-photos__flag">Панорама дня</span>
+          </div>
+            <div class="user-photo__comment comment-panorama">
+                <cite>Анна</cite>
+                <span>(5 минут назад)</span>
+                <p>
+                  Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
+                  вопросы!
+                </p>
+                <div class="comment__like">Нравится: 215</div>
+              </div>
+        </li>
         <li class="user-photos__item">
-          <div class="user-photos__style user__image--1"></div>
-          <div class="user-photo__comment comment">
-            <cite class="comment__author-name">Левон</cite>
-            <span class="comment__timer">(5 часов назад)</span>
-            <p class="comment__text">
+          <div class="user-photos__style image-1"></div>
+          <div class="user-photo__comment ">
+            <cite>Левон</cite>
+            <span>(5 часов назад)</span>
+            <p>
               Вчера он на луну летал, сегодня в руки к нам попал.
             </p>
             <div class="comment__like">Нравится: 356</div>
           </div>
         </li>
         <li class="user-photos__item">
-          <div class="user-photos__style user__image--2"></div>
-          <div class="user-photo__comment comment">
-            <cite class="comment__author-name">Антон</cite>
-            <span class="comment__timer">(12 часов назад)</span>
-            <p class="comment__text">
+          <div class="user-photos__style image-2"></div>
+          <div class="user-photo__comment">
+            <cite>Антон</cite>
+            <span>(12 часов назад)</span>
+            <p>
               Соседи будут рады!
             </p>
             <div class="comment__like">Нравится: 666</div>
           </div>
         </li>
         <li class="user-photos__item">
-          <div class="user-photos__style user__image--3"></div>
-          <div class="user-photo__comment comment">
-            <cite class="comment__author-name">Борис</cite>
-            <span class="comment__timer">(20 часов назад)</span>
-            <p class="comment__text">
+          <div class="user-photos__style image-3"></div>
+          <div class="user-photo__comment">
+            <cite>Борис</cite>
+            <span>(20 часов назад)</span>
+            <p>
               Здесь могла быть ваша цитата о высоком и вечном.
             </p>
             <div class="comment__like">Нравится: 215</div>
           </div>
         </li>
         <li class="user-photos__item">
-          <div class="user-photos__style user__image--4"></div>
-          <div class="user-photo__comment comment">
-            <cite class="comment__author-name">Сергей</cite>
-            <span class="comment__timer">(25 часов назад)</span>
-            <p class="comment__text">
+          <div class="user-photos__style image-4"></div>
+          <div class="user-photo__comment">
+            <cite>Сергей</cite>
+            <span>(25 часов назад)</span>
+            <p>
               Самая кубанская в мире!
             </p>
             <div class="comment__like">Нравится:4</div>
           </div>
         </li>
         <li class="user-photos__item">
-          <div class="user-photos__style user__image--5"></div>
-          <div class="user-photo__comment comment">
-            <cite class="comment__author-name">Максим</cite>
-            <span class="comment__timer">(40 часов назад)</span>
-            <p class="comment__text">
+          <div class="user-photos__style image-5"></div>
+          <div class="user-photo__comment">
+            <cite>Максим</cite>
+            <span>(40 часов назад)</span>
+            <p>
               Где снег-то?
             </p>
             <div class="comment__like">Нравится: 150</div>
           </div>
         </li>
         <li class="user-photos__item">
-          <div class="user-photos__style user__image--6"></div>
-          <div class="user-photo__comment comment">
-            <cite class="comment__author-name">Надежда</cite>
-            <span class="comment__timer">(45 часов назад)</span>
-            <p class="comment__text">
+          <div class="user-photos__style image-6"></div>
+          <div class="user-photo__comment">
+            <cite>Надежда</cite>
+            <span>(45 часов назад)</span>
+            <p>
               Всем GM и взаимные лайки!
             </p>
             <div class="comment__like">Нравится: 2560</div>
@@ -139,30 +139,33 @@
       </ul>
     </section>
   </main>
-  <footer class="footer">
-
+  <footer class="footer mobile-footer">
     <h2 class="visually-hidden">Социальные сети</h2>
     <section class="footer__icons">
-      <div class="footer__icon icon-logo-pink">
-        <img src="img/logo-pink-blue-mobile.svg" alt="" width="150" height="45">
+      <div class="footer__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img src="img/logo-pink-blue-mobile.svg" alt="" width="150" height="45">
+        </picture>
       </div>
-      <ul class="footer__social ul-style">
+      <ul class="footer__social">
         <li class="footer__icon">
           <img src="img/icon-twitter.svg" alt="">
         </li>
-        <li class="footer__icon footer">
+        <li class="footer__icon">
           <img src="img/icon-facebook.svg" alt="">
         </li>
-        <li class="footer__icon footer">
+        <li class="footer__icon">
           <img src="img/icon-youtube.svg" alt="">
         </li>
-        <div class="footer__icon icon--logo-htmlacademy">
-          Разработано
-          <img src="img/logo-htmlacademy.svg" alt="Логотип HTMLacademy">
-        </div>
       </ul>
+      <div class="footer__icon-htmlacademy">
+        Разработано
+        <img src="img/logo-htmlacademy.svg" alt="Логотип HTMLacademy">
+      </div>
     </section>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

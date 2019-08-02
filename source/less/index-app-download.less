@@ -4,10 +4,10 @@
   flex-direction: column;
   align-items: center;
   background-color: #1d2631;
-  width: 320px;
-  margin: 0 auto;
+
   width: auto;
-  min-height: 270px;
+
+  margin-bottom: 46px;
 }
 
 .app-download__button {
@@ -25,12 +25,12 @@
   margin-top: 30px;
   margin-bottom: 32px;
 
-  &:hover{
-    background-color: #fff;
+  &:hover {
+    background-color: @white;
   }
 
   &:active {
-    color: rgba(210, 40, 86, 0.3)
+    color: rgba(210, 40, 86, 0.3);
   }
 }
 
@@ -40,6 +40,10 @@
   align-items: flex-end;
   justify-content: space-between;
   min-width: 206px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .icons-apps__item-apple {
@@ -71,6 +75,8 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+
+  padding-bottom: 35px;
 }
 
 
@@ -78,20 +84,17 @@
   .app-download {
     position: absolute;
     background-color: transparent;
-    top: 335px;
+    top: 355px;
     left: 30px;
   }
 
   .app-download__button {
     width: 300px;
-
-    margin-top: 30px;
-    margin-bottom: 46px;
   }
 
   .icons-apps__title {
     width: 295px;
-    margin-top: 44px;
+    margin-top: 46px;
     font-size: 18px;
   }
 }
@@ -101,10 +104,10 @@
     top: 400px;
     left: 130px;
     width: 300px;
-  min-height: 285px;
+    min-height: 285px;
   }
 
   .app-download__button {
     font-size: 21px;
-}
+  }
 }
