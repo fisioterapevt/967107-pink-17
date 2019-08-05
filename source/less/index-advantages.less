@@ -1,0 +1,227 @@
+.advantages__effect {
+  display: none;
+  list-style: none;
+}
+
+.advantages p,
+.advantages h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__head-style {
+  width: 205px;
+  margin: 0 auto;
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 30px;
+
+  background-color: @white;
+}
+
+.advantages__head-style p {
+  margin-bottom: 40px;
+}
+
+.advantages__list-wrap {
+  background-color: @gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+  text-align: center;
+
+  margin: 0 auto;
+  padding: 0;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+  list-style: none;
+
+  padding-top: 85px;
+}
+
+.advantages__item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+
+  margin-bottom: 18px;
+}
+
+.advantages__item p {
+  margin-bottom: 40px;
+}
+
+.advantages__image-iphone {
+  width: 185px;
+  height: 320px;
+
+  margin: 0 auto;
+}
+
+.advantages__item img {
+  display: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .advantages__head-style {
+    width: 590px;
+    font-size: 40px;
+    line-height: 58px;
+
+    margin-bottom: 50px;
+  }
+
+  .advantages__head-style p {
+    margin-bottom: 0;
+  }
+
+  .advantages__list-wrap {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .advantages__list {
+    text-align: left;
+    width: 310px;
+    margin: 0;
+
+    margin-top: 70px;
+    margin-right: 20px;
+
+    padding: 0;
+  }
+
+  // .advantages__item h3{
+  //   margin-bottom: 18px;
+  // }
+
+  .advantages__item p {
+    margin-bottom: 0;
+  }
+
+  .advantages__image-iphone {
+    width: 268px;
+    height: 480px;
+  }
+
+  .advantages__effect {
+    display: flex;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+    margin-top: 58px;
+    margin-bottom: 52px;
+  }
+
+  .advantages__effect-picture {
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 239px;
+    height: 276px;
+    margin-right: 70px;
+  }
+
+  .advantages__effect-text {
+    width: 296px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .advantages__effect-text h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .advantages__effect-text a {
+    color: @red;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__image-iphone {
+    display: none;
+  }
+
+  .advantages__item img {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .advantages__head-style {
+    width: 735px;
+    font-size: 50px;
+    line-height: 58px;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+    justify-content: space-between;
+
+    min-width: 940px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+
+    margin: 0;
+    padding-top: 68px;
+  }
+
+  .advantages__item {
+    width: 290px;
+    text-align: center;
+  }
+
+  .advantages__item h3 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .advantages__effect {
+    background-color: @gray;
+    margin: 0;
+    padding-top: 73px;
+    padding-bottom: 67px;
+  }
+
+  .advantages__effect-picture {
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    width: 298px;
+    height: 345px;
+
+    background-size: cover;
+    background-position: center;
+
+    margin-right: 67px;
+  }
+
+  .advantages__effect-text {
+    width: 525px;
+    font-size: 18px;
+    line-height: 30px;
+
+    padding-top: 114px;
+  }
+
+  .advantages__effect-text h3 {
+    line-height: 30px;
+  }
+}

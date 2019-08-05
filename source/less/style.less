@@ -1,0 +1,69 @@
+@import "variables.less";
+@import "main-nav.less";
+@import "footer.less";
+@import "mobile-footer.less";
+@import "index-main-picture.less";
+@import "index-app-download.less";
+@import "index-advantages.less";
+@import "index-reviews.less";
+@import "photo-main-picture.less";
+@import "photo-user-photos.less";
+@import "form-main-pictures.less";
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: @font;
+  font-weight: 400;
+  font-style: normal;
+  color: @dark-blue;
+  background-color: @white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    min-width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    min-width: 1200px;
+  }
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.link-style {
+  color: @white;
+  text-decoration: none;
+  cursor: pointer;
+}

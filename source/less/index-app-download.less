@@ -1,0 +1,113 @@
+.app-download {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1d2631;
+
+  width: auto;
+
+  margin-bottom: 46px;
+}
+
+.app-download__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  min-height: 55px;
+  border: 3px solid @white;
+  border-radius: 50px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 32px;
+
+  &:hover {
+    background-color: @white;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+
+.icons-apps {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-width: 206px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icons-apps__item-apple {
+  width: 47px;
+  height: 57px;
+  background-image: url("../img/logo-apple.svg");
+  background-repeat: no-repeat;
+}
+
+.icons-apps__item-android {
+  width: 43px;
+  height: 47px;
+  background-image: url("../img/logo-android.svg");
+  background-repeat: no-repeat;
+}
+
+.icons-apps__item-microsoft {
+  width: 44px;
+  height: 41px;
+  background-image: url("../img/logo-microsoft.svg");
+  background-repeat: no-repeat;
+}
+
+.icons-apps__title {
+  text-align: center;
+  width: 230px;
+  margin-top: 29px;
+  color: @white;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+
+  padding-bottom: 35px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .app-download {
+    position: absolute;
+    background-color: transparent;
+    top: 355px;
+    left: 30px;
+  }
+
+  .app-download__button {
+    width: 300px;
+  }
+
+  .icons-apps__title {
+    width: 295px;
+    margin-top: 46px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .app-download {
+    top: 400px;
+    left: 130px;
+    width: 300px;
+    min-height: 285px;
+  }
+
+  .app-download__button {
+    font-size: 21px;
+  }
+}
