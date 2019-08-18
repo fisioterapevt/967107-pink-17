@@ -1,0 +1,59 @@
+.map {
+  position: relative;
+  background-color: @white;
+  color: @red;
+  width: 320px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.map__picture {
+  position: absolute;
+  bottom: 0;
+}
+
+.map__point {
+  position: absolute;
+  z-index: 10;
+  width: 36px;
+  height: 35px;
+  bottom: 68px;
+  right: 50%;
+  margin-right: -17px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    width: 660px;
+    min-height: 376px;
+    margin-bottom: 30px;
+  }
+
+  .map__picture {
+    width: 660px;
+    bottom: -108px;
+  }
+
+  .map__point {
+    bottom: 148px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    width: 1200px;
+    min-height: 500px;
+    margin-bottom: 66px;
+  }
+
+  .map__picture {
+    width: 1200px;
+    bottom: -196px;
+  }
+
+  .map__point {
+    bottom: 204px;
+  }
+}

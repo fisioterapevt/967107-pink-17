@@ -1,0 +1,95 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: block;
+  }
+
+  .effect__list {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .effect__picture {
+    width: 239px;
+    height: 276px;
+
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .effect__text {
+    width: 296px;
+    font-size: 14px;
+    line-height: 24px;
+
+    margin-top: 37px;
+    margin-left: 72px;
+  }
+
+  .effect__text-head {
+    font-size: 30px;
+    line-height: 36px;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .effect__text-description {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .effect__link {
+    display: block;
+
+    color: @red;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    background-color: @gray;
+  }
+
+  .advantages__effect {
+    margin: 0;
+    padding-bottom: 67px;
+  }
+
+  .effect__picture {
+    width: 298px;
+    height: 345px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .effect__text {
+    width: 525px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-bottom: 112px;
+  }
+
+  .effect__text-head {
+    margin-top: 58px;
+    margin-bottom: 25px;
+    line-height: 30px;
+  }
+
+  .effect__text-description {
+    margin-bottom: 30px;
+  }
+}

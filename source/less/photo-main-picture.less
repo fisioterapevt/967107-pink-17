@@ -1,6 +1,7 @@
 .photo-main .main-picture__back {
-  margin-bottom: 55px;
-  height: 238px;
+  margin-bottom: 46px;
+  height: 275px;
+  background-position: center -7px;
 }
 
 .main__heading {
@@ -11,14 +12,14 @@
 
   font-size: 24px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: lighter;
   color: @white;
 
   text-align: center;
 }
 
 .photo-main .main__heading {
-  top: 100px;
+  top: 134px;
   left: 50%;
 
   width: 170px;
@@ -26,14 +27,14 @@
   margin-left: -85px;
 }
 
-
 @media (min-width: @tablet-width) {
   .photo-main .main-picture__back {
     height: 440px;
+    background-position: center -7px;
   }
 
   .photo-main .main__heading {
-    top: 191px;
+    top: 180px;
     font-size: 50px;
     line-height: 60px;
     width: 348px;
@@ -43,11 +44,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .photo-main .main-picture {
+    margin-bottom: 47px;
+  }
+
   .photo-main .main-picture__back {
     height: 395px;
+    background-position: center -7px;
   }
 
   .photo-main .main__heading {
-    top: 184px;
+    top: 174px;
   }
 }
