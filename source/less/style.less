@@ -8,39 +8,41 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensanslight.woff2") format("woff2"),
-    url("../fonts/opensanslight.woff") format("woff");
-  font-weight: lighter;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
   src: url("../fonts/opensansbold.woff2") format("woff2"),
     url("../fonts/opensansbold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
 @import "variables.less";
-@import "main-header.less";
-@import "main-nav.less";
-@import "footer.less";
-@import "footer-icons.less";
-@import "mobile-footer.less";
-@import "index-main-picture.less";
-@import "index-app-download.less";
-@import "index-advantages.less";
-@import "index-effect.less";
-@import "index-reviews.less";
-@import "index-plans.less";
-@import "index-map";
-@import "photo-main-picture.less";
-@import "photo-user-photos.less";
-@import "photo-user-editor.less";
-@import "competition-main-pictures.less";
-@import "competition-application.less";
-@import "competition-modal.less";
+@import "header/main-header.less";
+@import "header/main-nav.less";
+@import "footer/footer.less";
+@import "footer/footer-contacts.less";
+@import "footer/footer-icons.less";
+@import "footer/mobile-footer.less";
+@import "main-picture/main-picture.less";
+@import "index/index-app-download.less";
+@import "index/index-advantages.less";
+@import "index/index-effect.less";
+@import "index/index-reviews.less";
+@import "index/index-plans.less";
+@import "index/index-map";
+@import "photo/photo-main-picture.less";
+@import "photo/photo-user-photos.less";
+@import "photo/photo-user-editor.less";
+@import "competition/competition-main-pictures.less";
+@import "competition/competition-application.less";
+@import "competition/competition-modal-close.less";
+@import "competition/competition-modal-error.less";
 
 html {
   box-sizing: border-box;
@@ -53,7 +55,7 @@ body {
 
   font-size: 14px;
   line-height: 24px;
-  // font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: @dark-blue;
@@ -75,7 +77,7 @@ body {
 
 @media (min-width: @desktop-width) {
   .container {
-    width: 940px;
+    width: 1200px;
     padding: 0 130px;
   }
 }
@@ -85,7 +87,8 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+// .visually-hidden:not(:focus):not(:active)
+.visually-hidden {
   position: absolute;
 
   width: 1px;

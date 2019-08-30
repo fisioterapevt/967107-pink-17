@@ -13,7 +13,7 @@ navToggle.addEventListener("click", function () {
   }
 });
 
-var form = document.querySelector(".application__form");
+var form = document.querySelector(".application-form");
 var modalError = document.querySelector(".modal-error");
 var formSurename = document.querySelector(".js-surname");
 var formName = document.querySelector(".js-name");
@@ -66,6 +66,7 @@ form.addEventListener("submit", function (evt) {
     modalOk.classList.add("js-modal-close-show");
   }
 });
+
 
 closeErrorModal.addEventListener("click", function (evt) {
   evt.preventDefault();

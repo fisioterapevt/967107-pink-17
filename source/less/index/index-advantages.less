@@ -1,24 +1,21 @@
-.advantages p,
-.advantages h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.advantages__head-style {
+.advantages__head {
   width: 205px;
-  margin: 0 auto;
+
   text-align: center;
+
   font-size: 24px;
   font-weight: 300;
   line-height: 28px;
+
+  margin: 0 auto;
   margin-top: 42px;
-  margin-bottom: 30px;
 
   background-color: @white;
 }
 
-.advantages__head-style p {
-  margin-bottom: 31px;
+.advantages__head--br {
+  margin-top: 33px;
+  margin-bottom: 26px;
 }
 
 .advantages__list-wrap {
@@ -35,7 +32,7 @@
     top: 0;
     z-index: 2;
     width: 100%;
-    height: 35px;
+    height: 47px;
     background-image: linear-gradient(to top left, transparent 50%, @white 50%);
     background-repeat: no-repeat;
     background-position: 0 0, 100% 0;
@@ -54,55 +51,57 @@
 
   list-style: none;
 
-  padding-top: 83px;
+  padding-top: 89px;
 }
 
 .advantages__item {
-  h3 {
-    font-size: 18px;
-    font-weight: bold;
-
-    margin-bottom: 12px;
-  }
-
-  p {
-    margin-bottom: 31px;
-  }
+  position: relative;
 }
 
-.advantages__image-iphone {
+.advantages__item-head {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.advantages__item-text {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+
+.advantages__iphone--all-pages {
+  position: relative;
   width: 157px;
-  height: 277px;
 
-  margin: 0 auto;
-
-  margin-top: 10px;
+  top: 11px;
 }
 
-.advantages__item img {
+.advantages__iphone {
   display: none;
 }
 
+.advantages__item--mobile {
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 @media (min-width: @tablet-width) {
   .advantages {
-    margin-bottom: 57px;
+    margin-bottom: 60px;
   }
 
-  .advantages__head-style {
+  .advantages__head {
     width: 590px;
     font-size: 40px;
     line-height: 50px;
-
-    margin-bottom: 46px;
-
-    p {
-      margin: 0 auto;
-    }
   }
 
-  .advantages__head-style-br {
+  .advantages__head--br {
     width: 335px;
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
 
   .advantages__list-wrap {
@@ -110,7 +109,7 @@
     justify-content: center;
 
     &::after {
-      height: 50px;
+      height: 60px;
     }
   }
 
@@ -119,7 +118,7 @@
     width: 660px;
     min-height: 411px;
     align-items: flex-end;
-    margin-top: 73px;
+    margin-top: 80px;
     padding: 0;
   }
 
@@ -130,18 +129,14 @@
     margin-right: 24px;
   }
 
-  .advantages__item p {
-    margin-bottom: 34px;
-  }
-
-  .advantages__image-iphone {
+  .advantages__iphone--all-pages {
     position: absolute;
     z-index: 5;
     width: 268px;
     height: 480px;
-    bottom: 0;
-    margin: 0;
-    left: 21px;
+
+    left: -307px;
+    top: -355px;
   }
 }
 
@@ -150,8 +145,16 @@
     margin-bottom: 0;
   }
 
-  .advantages__image-iphone {
-    display: none;
+  .advantages__head {
+    width: 735px;
+    font-size: 50px;
+    line-height: 58px;
+  }
+
+  .advantages__head--br {
+    width: 425px;
+
+    margin-bottom: 77px;
   }
 
   .advantages__list-wrap::after {
@@ -174,57 +177,45 @@
     font-weight: normal;
 
     margin: 0;
-    padding-top: 356px;
-    padding-bottom: 30px;
+    padding-top: 360px;
   }
 
   .advantages__item {
-    width: 230px;
+    position: relative;
+    width: 290px;
     margin: 0;
 
     text-align: center;
-
-    img {
-      position: absolute;
-      z-index: 20;
-      display: flex;
-      justify-content: space-around;
-
-      top: 0;
-    }
-
-    h3 {
-      font-size: 30px;
-      line-height: 30px;
-      margin-bottom: 25px;
-    }
   }
 
-  .advantages__item--iphone-screen-1 {
-    left: 17px;
+  .advantages__iphone,
+  .advantages__iphone--all-pages {
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    justify-content: space-around;
+
+    top: -352px;
+    left: 0;
+
+
+    width: 290px;
+    height: 300px;
   }
 
-  .advantages__item--iphone-screen-2 {
-    left: 50%;
-    margin-left: -140px;
+  .advantages__item-head {
+    width: 235px;
+    margin: 0 auto;
+
+    font-size: 30px;
+    margin-bottom: 25px;
   }
 
-  .advantages__item--iphone-screen-3 {
-    right: 10px;
+  .advantages__item-text {
+    width: 231px;
+    margin: 0 auto;
   }
 
-
-  .advantages__head-style {
-    width: 735px;
-    font-size: 50px;
-    line-height: 58px;
-
-    margin-bottom: 82px;
-  }
-
-  .advantages__head-style-br {
-    width: 425px;
-  }
 
   .advantages-wrap {
     background-color: @gray;

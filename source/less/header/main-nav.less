@@ -1,6 +1,5 @@
 .main-nav {
   position: relative;
-  margin: 0 auto;
 
   width: auto;
   z-index: 2;
@@ -12,15 +11,24 @@
   border-top: 1px solid #485461;
 
   padding-bottom: 25px;
-  margin-left: -50px;
-}
+  padding-top: 3px;
+  margin-left: -51px;
 
+  &:hover path {
+    fill: @red;
+  }
+
+  & svg:active path {
+    fill: @white;
+    fill-opacity: 0.3;
+  }
+}
 
 .main-nav__toggle {
   position: absolute;
   z-index: 2;
-  top: 15px;
-  right: 20px;
+  top: 19px;
+  right: 17px;
 }
 
 .toggle {
@@ -31,7 +39,7 @@
 
   cursor: pointer;
   border: 0;
-  background-color: unset;
+  background-color: transparent;
 }
 
 // toogle Hamburger menu -closed- condition
@@ -45,19 +53,19 @@
   height: 4px;
 
   background-color: @white;
-  box-shadow: 0 8px 0 0 @white, 0 16px 0 0 @white;
+  box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
 }
 
 // hover condition Hamburger (another color)
 .main-nav--closed .toggle:hover::before {
   background-color: @red;
-  box-shadow: 0 8px 0 0 @red, 0 16px 0 0 @red;
+  box-shadow: 0 10px 0 0 @red, 0 20px 0 0 @red;
 }
 
 //focus condition Hamburger (another color)
 .main-nav--closed .toggle:active::before {
   background-color: @red-active;
-  box-shadow: 0 8px 0 0 @red-active, 0 16px 0 0 @red-active;
+  box-shadow: 0 10px 0 0 @red-active, 0 20px 0 0 @red-active;
 }
 
 //toogle Cross menu -opened- condition
@@ -112,7 +120,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid @black;
   border-top: 1px solid #485461;
 }
 
@@ -120,17 +128,19 @@
   color: @white;
   text-decoration: none;
   cursor: pointer;
+}
 
-  &[href] {
-    &:hover {
-      color: rgb(210, 40, 86);
-    }
+.main-nav__link[href] {
+  &:hover {
+    color: @red;
+  }
 
-    &:active {
-      color: rgba(210, 40, 86, 0.3);
-    }
+  &:active {
+    color: @white;
+    opacity: 0.3;
   }
 }
+
 
 // скрывает меню только в указанных рамках
 @media (max-width: @mobile-to-tablet-width-only) {
@@ -148,15 +158,13 @@
   }
 
   .main-nav--opened .nav-logo {
-    min-height: 40px;
     background-color: @dark-blue;
   }
 
   .main-nav--nojs .nav-logo {
     background-color: @dark-blue;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid @black;
   }
-
 
   .main-nav--nojs .main-nav__toggle {
     display: none;
@@ -164,13 +172,15 @@
 
   .main-nav--nojs .main-nav__item {
     display: block;
+    text-align: center;
+    line-height: 60px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .nav-logo {
     padding-top: 25px;
-    padding-left: 73px;
+    padding-left: 72px;
     padding-bottom: 43px;
   }
 
@@ -186,17 +196,19 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav-wrap {
+    width: 960px;
+    margin: 0 auto;
+  }
+
   .nav-logo {
     padding-top: 27px;
-    padding-left: 52px;
+    padding-left: 62px;
     border: 0;
   }
 
   .main-nav {
     display: flex;
-
-    width: 940px;
-    padding: 0 130px;
 
     align-items: center;
   }
@@ -207,7 +219,7 @@
     font-weight: normal;
     text-transform: unset;
 
-    margin-left: 172px;
+    margin-left: 170px;
   }
 
   .main-nav__item {
@@ -229,10 +241,9 @@
       left: 0;
       bottom: -13px;
       height: 2px;
-      background: #ffffff;
+      background: @white;
     }
   }
-
 
   .main-nav__toggle {
     display: none;
