@@ -1,0 +1,47 @@
+.competition-main__head--hide {
+  display: none;
+}
+
+.competition-main__head-wrap {
+  width: 275px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 auto;
+
+  margin-bottom: 37px;
+}
+
+@media (min-width: @tablet-width) {
+  .competition-main__head-wrap {
+    width: 500px;
+    font-size: 18px;
+
+    margin-top: 93px;
+    margin-bottom: 71px;
+  }
+
+  .competition-main__head--hide {
+    display: block;
+  }
+
+  .competition-main__head {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .competition-main__head-wrap {
+    margin-bottom: 34px;
+    width: 750px;
+    font-size: 18px;
+
+    text-align: start;
+  }
+
+  .competition-main__head--hide {
+    position: relative;
+    top: -30px;
+    right: -251px;
+  }
+}

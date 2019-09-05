@@ -5,8 +5,14 @@
   z-index: 2;
 }
 
-.nav-logo {
+.main-nav-wrap {
+  width: 100%;
+  background-color: #0000007a;
+}
+
+.main-nav__logo {
   display: flex;
+
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
 
@@ -62,13 +68,11 @@
   box-shadow: 0 10px 0 0 @red, 0 20px 0 0 @red;
 }
 
-//focus condition Hamburger (another color)
 .main-nav--closed .toggle:active::before {
   background-color: @red-active;
   box-shadow: 0 10px 0 0 @red-active, 0 20px 0 0 @red-active;
 }
 
-//toogle Cross menu -opened- condition
 .main-nav--opened .toggle {
   &::before,
   &::after {
@@ -92,13 +96,11 @@
     transform: rotate(-45deg);
   }
 
-  // hover condition Cross (another color)
   &:hover::before,
   &:hover::after {
     background-color: @red;
   }
 
-  // active condition Cross (another color)
   &:active::before,
   &:active::after {
     background-color: rgb(116, 26, 26);
@@ -141,8 +143,6 @@
   }
 }
 
-
-// скрывает меню только в указанных рамках
 @media (max-width: @mobile-to-tablet-width-only) {
   .main-nav__item {
     background-color: @dark-blue;
@@ -153,15 +153,15 @@
     display: none;
   }
 
-  .main-nav--closed .nav-logo {
+  .main-nav--closed .main-nav__logo {
     border: 0;
   }
 
-  .main-nav--opened .nav-logo {
+  .main-nav--opened .main-nav__logo {
     background-color: @dark-blue;
   }
 
-  .main-nav--nojs .nav-logo {
+  .main-nav--nojs .main-nav__logo {
     background-color: @dark-blue;
     border-bottom: 1px solid @black;
   }
@@ -178,7 +178,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .nav-logo {
+  .main-nav__logo {
     padding-top: 25px;
     padding-left: 72px;
     padding-bottom: 43px;
@@ -189,19 +189,14 @@
     right: 20px;
   }
 
-  .nav-logo-image {
+  .main-nav__logo-image {
     width: 150px;
     height: auto;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav-wrap {
-    width: 960px;
-    margin: 0 auto;
-  }
-
-  .nav-logo {
+  .main-nav__logo {
     padding-top: 27px;
     padding-left: 62px;
     border: 0;
@@ -209,6 +204,9 @@
 
   .main-nav {
     display: flex;
+
+    width: 960px;
+    margin: 0 auto;
 
     align-items: center;
   }

@@ -25,24 +25,32 @@
 @import "variables.less";
 @import "header/main-header.less";
 @import "header/main-nav.less";
-@import "footer/footer.less";
-@import "footer/footer-contacts.less";
+@import "footer/contact-us.less";
 @import "footer/footer-icons.less";
-@import "footer/mobile-footer.less";
-@import "main-picture/main-picture.less";
-@import "index/index-app-download.less";
-@import "index/index-advantages.less";
-@import "index/index-effect.less";
-@import "index/index-reviews.less";
-@import "index/index-plans.less";
-@import "index/index-map";
-@import "photo/photo-main-picture.less";
-@import "photo/photo-user-photos.less";
-@import "photo/photo-user-editor.less";
-@import "competition/competition-main-pictures.less";
-@import "competition/competition-application.less";
-@import "competition/competition-modal-close.less";
-@import "competition/competition-modal-error.less";
+@import "footer/footer-social.less";
+@import "footer/footer-logo.less";
+@import "footer/footer-htmlacademy.less";
+@import "index/app-download.less";
+@import "index/advantages.less";
+@import "index/effect.less";
+@import "index/reviews.less";
+@import "index/plans.less";
+@import "index/map";
+@import "photo/photo-main.less";
+@import "photo/photo-users.less";
+@import "photo/panorama.less";
+@import "photo/user-editor.less";
+@import "photo/photo-button.less";
+@import "photo/photo-name.less";
+@import "photo/photo-time.less";
+@import "photo/photo-text.less";
+@import "photo/photo-like.less";
+@import "competition/application-form.less";
+@import "competition/competition-main.less";
+@import "modals/modal.less";
+@import "modals/modal-close.less";
+@import "modals/modal-error.less";
+@import "button/button.less";
 
 html {
   box-sizing: border-box;
@@ -59,7 +67,6 @@ body {
   font-weight: normal;
   font-style: normal;
   color: @dark-blue;
-  background-color: @white;
 }
 
 .container {
@@ -77,7 +84,7 @@ body {
 
 @media (min-width: @desktop-width) {
   .container {
-    width: 1200px;
+    width: 960px;
     padding: 0 130px;
   }
 }

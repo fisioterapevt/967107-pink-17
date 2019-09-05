@@ -4,7 +4,7 @@
       display: none;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
       .footer-logo__desktop {
         display: inline-block;
       }

@@ -1,0 +1,46 @@
+.footer-htmlacademy {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 135px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+
+  text-decoration: none;
+  color: @dark-blue;
+}
+
+.footer-htmlacademy__head {
+  margin: 0;
+  margin-right: 18px;
+}
+
+
+.footer-htmlacademy__icon {
+  color: @red;
+  cursor: pointer;
+
+  &:hover {
+    color: @dark-blue;
+  }
+
+  & svg:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .footer-htmlacademy {
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer-htmlacademy {
+    width: 155px;
+    font-size: 18px;
+  }
+}

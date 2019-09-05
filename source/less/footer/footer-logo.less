@@ -1,0 +1,35 @@
+.footer-logo {
+  display: block;
+
+  margin-top: 40px;
+  margin-bottom: 33px;
+
+  cursor: pointer;
+
+  &:hover path {
+    fill: @red;
+  }
+
+  & svg:active {
+    opacity: 0.3;
+
+    .footer-logo__text path {
+      fill: @dark-blue;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .footer-logo {
+    margin: 0;
+    margin-right: 74px;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer-logo {
+    margin-left: 10px;
+    margin-right: 239px;
+  }
+}

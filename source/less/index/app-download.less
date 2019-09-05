@@ -1,22 +1,21 @@
 .app-download {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
+
+
   align-items: center;
   background-color: #1d2631;
-  width: auto;
+
+  margin-top: 315px;
 }
 
 .app-download__button {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 275px;
+  max-width: 275px;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 28px;
+  padding: 15px 37px;
+
+  margin-top: 27px;
   margin-bottom: 32px;
 
   border: 3px solid @white;
@@ -25,7 +24,6 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
-
 
   &:hover {
     background-color: @white;
@@ -40,8 +38,10 @@
 .app-download__icons {
   display: flex;
   align-items: flex-end;
+
+  width: 206px;
   justify-content: space-between;
-  min-width: 206px;
+  flex-wrap: wrap;
 
   list-style: none;
   margin: 0;
@@ -77,16 +77,20 @@
 
 @media (min-width: @tablet-width) {
   .app-download {
-    position: absolute;
+    width: 300px;
     background-color: transparent;
-    bottom: 109px;
-    left: 50%;
+    margin: 0;
 
-    margin-left: -312px;
+    margin-left: 21px;
+    margin-bottom: 107px;
   }
 
   .app-download__button {
-    width: 296px;
+    max-width: 296px;
+
+    padding: 15px 45px;
+
+    margin-top: 28px;
     margin-bottom: 46px;
   }
 
@@ -104,16 +108,15 @@
 
 @media (min-width: @desktop-width) {
   .app-download {
-    bottom: 120px;
-    margin-left: -470px;
-
-    width: 300px;
+    margin-left: 10px;
+    margin-bottom: 121px;
   }
 
   .app-download__button {
     margin: 0;
     font-size: 21px;
     margin-bottom: 68px;
+    padding: 16px 28px;
   }
 
   .app-download__icons {
